@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 
 export default function NavBar({title = 'Set title', 
-  aboutText = 'Set About Text'}) {
+  aboutText = 'Set About Text', changeMode, theme}) {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className={`navbar navbar-expand-lg navbar-${theme} bg-${theme}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             {title}
@@ -35,6 +35,18 @@ export default function NavBar({title = 'Set title',
                 </a>
               </li>
             </ul>
+            <div className={`form-check form-switch text-${theme === 'light'? 'dark': 'light'}`}>
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+                onClick={changeMode}
+              />
+              <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
+                Enable Dark Mode
+              </label>
+            </div>
           </div>
         </div>
       </nav>
