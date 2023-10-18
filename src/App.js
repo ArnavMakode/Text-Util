@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/Text-Util">
       <NavBar
         title="TextUtils"
         aboutText="About Us"
