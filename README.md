@@ -11,7 +11,10 @@
 ## Technologies Used
 
 - **ReactJS:** The project is built using ReactJS, a popular JavaScript library for building user interfaces.
-- **useState Hook:** `useState` hook from React is utilized for managing state within functional components.
+- **useState Hook:** The `useState` hook from React is utilized for managing state within functional components.
+- **useEffect Hook:** The `useEffect` hook from React is employed for performing side effects in functional components. It allows you to run code in functional components in response to component lifecycle events.
+- **React Router v6:** The project utilizes React Router v6 for implementing navigation and routing in the application. React Router v6 provides a declarative way to navigate and manage views in a React application.
+
 
 ## Usage
 
@@ -26,4 +29,4 @@
 3. **Email Address Extraction:**
    - Paste text into the input area.
    - Click "Fetch Email IDs" to extract valid email addresses.
-
+Visit the Text-Util website at [Text-Utils](https://arnavmakode.github.io/Text-Util/) to start processing your text efficiently.
