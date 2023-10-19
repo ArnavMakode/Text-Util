@@ -32,7 +32,6 @@ export default function TextForm({heading, theme, showAlert}) {
 
     const copyText = async () => {
         try{
-            document.getElementById("myBox").select()
             await navigator.clipboard.writeText(text);
             showAlert('text copied to clipboard successfully', 'success');
         }

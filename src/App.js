@@ -39,7 +39,7 @@ function App() {
         <Route index element={
       <div className="container my-3">
         <TextForm
-          heading="Enter the text to analyze"
+          heading="Text-Utils: Power Up Your Text Processing Tasks!"
           theme={mode}
           showAlert={showAlert}
         />
